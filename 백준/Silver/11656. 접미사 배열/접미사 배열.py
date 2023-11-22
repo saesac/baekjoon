@@ -1,6 +1,2 @@
 s=str(input())
-s_list=[]
-for i in range(len(s)):
-    s_list.append(s[i:])
-for i in sorted(s_list):
-    print(i)
+print("\n".join(sorted([s[i:] for i in range(len(s))])))
